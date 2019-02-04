@@ -2,21 +2,6 @@
 --main-color: #e6f3ff;
 --accent-1: #cce6ff;
 --accent-2: #339cff;
-
-
-/*
-meduim
-dark
-light -- links
-
---main-color: #009393;
---accent-1: #005B5B;
---accent-2: #F5CC00;
-
-
-*/
-
-
 }
 
 html, body {
@@ -31,8 +16,6 @@ body{
 	width: 100%;
 	height: 100%;
 	font-family: calibri, sans-serif;
-	/*margin: 0%;
-	padding: 0%;*/
 }
 
 
@@ -48,16 +31,7 @@ h1 a {
 
 /*all the visible content on the site*/
 #wrapper{
-	/*min-height:100%;*/
-	/*position:relative;*/
-	
 
-
-	/*height: 100%;
-	padding-bottom: 50px;
-	margin-bottom: 0;*/
-
-	
 }
 
 
@@ -68,9 +42,7 @@ h1 a {
 
 /*main contnent of a page*/
 #content{
-	/*padding-bottom: 50px;*/
-	/*padding-bottom: 100px;
-	margin-bottom: 0;*/
+	background-color: white;
 	padding-left: 1%;
 	padding-right: 1%;
 
@@ -79,27 +51,8 @@ h1 a {
   	flex-direction: column;
 }
 
-#content div {
-	padding-right: 1%;
-	padding-left: 1%;
-}
 
-
-
-
-
-#intro {
-	/*color: white;*/
-	background: linear-gradient( var(--main-color) , var(--accent-1) );
-	margin: 0px;
-
-}
-
-#test {
-	background: linear-gradient( var(--accent-1) , var(--main-color) );
-	/* have as the section right after nav bar */
-}
-
+/*main navigation menu at the top of every page*/
 #nav {
 	width: 100%;
 	background-color:var(--accent-1);;
@@ -124,8 +77,6 @@ h1 a {
 	padding: 30px;
 	margin 1px;
 	text-decoration: none;
-
-
 }
 
 #nav a:hover {
@@ -144,42 +95,13 @@ a:hover {
 
 
 
-
-
 /*footer section*/
 footer {
-	/*background-color: var(--accent-1);*/
-
 	text-align:center;
-
 	width: 100%;
 	height: 50px;
-
 	flex: 1;
-
-
-
-	/*
-	bottom: 0;
-
-
-	margin-bottom: 0px;
-	padding-bottom: 30px;
-
-
-	position: fixed;
-
-
-	/*
-	position: absolute;
-	bottom: 0;
-	height: 50px;
-	*/
-
-
-	
-
-
+	padding-top: 1%;
 }
 
 footer li{
@@ -193,6 +115,4 @@ footer img {
 	height:50%;
 	padding-right: 1%;
 	padding-left: 1%
-
-
 }
