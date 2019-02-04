@@ -1,8 +1,3 @@
-/* CSS for peronal site
-Daisy Barrette (c) 2017
-
-*/
-
 :root {
 --main-color: #e6f3ff;
 --accent-1: #cce6ff;
@@ -23,28 +18,6 @@ light -- links
 
 
 }
-
-.wrapper {
-	min-height:100%;
-	/*position:relative;*/
-	height: 100%;
-	padding-bottom: 50px;
-	margin-bottom: 0;
-}
-
-.content {
-	/*padding-bottom: 50px;*/
-	padding-bottom: 100px;
-	margin-bottom: 0;
-
-}
-
-.content div {
-	padding-right: 1%;
-	padding-left: 1%;
-}
-
-
 
 html, body {
 	margin: 0;
@@ -72,6 +45,48 @@ h1 a {
 	text-decoration: none;
 	color:black;
 }
+
+/*all the visible content on the site*/
+#wrapper{
+	/*min-height:100%;*/
+	/*position:relative;*/
+	
+
+
+	/*height: 100%;
+	padding-bottom: 50px;
+	margin-bottom: 0;*/
+
+	
+}
+
+
+/*header section, includes banner and menu bar*/
+#header{
+
+}
+
+/*main contnent of a page*/
+#content{
+	/*padding-bottom: 50px;*/
+	/*padding-bottom: 100px;
+	margin-bottom: 0;*/
+	padding-left: 1%;
+	padding-right: 1%;
+
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+}
+
+#content div {
+	padding-right: 1%;
+	padding-left: 1%;
+}
+
+
+
+
 
 #intro {
 	/*color: white;*/
@@ -127,11 +142,24 @@ a:hover {
 	text-decoration: underline;
 }
 
-#footer {
+
+
+
+
+/*footer section*/
+footer {
 	/*background-color: var(--accent-1);*/
+
+	text-align:center;
 
 	width: 100%;
 	height: 50px;
+
+	flex: 1;
+
+
+
+	/*
 	bottom: 0;
 
 
@@ -149,19 +177,19 @@ a:hover {
 	*/
 
 
-	text-align:center;
+	
 
 
 }
 
-#footer li{
+footer li{
 	display: inline-block;
 	text-align: center;
 	padding:0;
 	height:1%;
 }
 
-#footer img {
+footer img {
 	height:50%;
 	padding-right: 1%;
 	padding-left: 1%
