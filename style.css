@@ -1,7 +1,9 @@
 :root {
---main-color: #e6f3ff;
---accent-1: #cce6ff;
---accent-2: #339cff;
+--main-color: #eaf2f2;/*main*/
+--accent-1: #cce6ff; /*light*/
+--accent-2: #339cff; /*dark*/
+--link: #4b98b7;
+--link-hover: #303a7a;
 }
 
 html, body {
@@ -13,6 +15,7 @@ html, body {
 
 body{
 	background-color: var(--main-color);
+
 	width: 100%;
 	height: 100%;
 	font-family: calibri, sans-serif;
@@ -20,18 +23,27 @@ body{
 
 
 h1 {
-	text-align: center;
+	text-align: left;
+	padding: 3%;
 	
 }
 
-h1 a {
+h1 a, h1 a:visited {
 	text-decoration: none;
+	color:var(--link);
+}
+
+h1 a:hover {
 	color:black;
+	text-decoration: none;
 }
 
 /*all the visible content on the site*/
 #wrapper{
-
+margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height:100%;
 }
 
 
@@ -40,17 +52,31 @@ h1 a {
 
 }
 
+#banner {
+	background-image: url("images/daisy.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height:100%;
+	padding:0;
+}
+
+
 /*main contnent of a page*/
 #content{
 	background-color: white;
-	padding-left: 1%;
-	padding-right: 1%;
+	padding-left: 5%;
+	padding-right: 5%;
 
 	display: flex;
   	min-height: 100vh;
   	flex-direction: column;
 }
 
+#content img{
+	max-width:604px;
+}
 
 /*main navigation menu at the top of every page*/
 #nav {
@@ -85,11 +111,13 @@ h1 a {
 
 
 a {
-	color: var(--accent-2);
+	color: var(--link);
+	text-decoration: none;
 	
 }
 
 a:hover {
+	color: var(--link-hover);
 	text-decoration: underline;
 }
 
