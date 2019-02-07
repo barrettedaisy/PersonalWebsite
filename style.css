@@ -80,7 +80,14 @@ header{
 
 #content img{
 	max-width:600px;
+	margin-top: 5%;
+	margin-bottom: 1%;
 }
+
+.filmStill {
+	max-width: 100%;
+	
+}	
 
 /*main navigation menu at the top of every page*/
 #nav {
