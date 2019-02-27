@@ -130,6 +130,7 @@ header{
     
     #nav li {
 	display: flex;
+	width:100%;
 	}
 
 	#content {
