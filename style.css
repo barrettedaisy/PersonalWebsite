@@ -1,62 +1,195 @@
-body {
-	background-color: lightblue;
-	padding: 2%;
-	font-family: Verdana, Geneva, sans-serif;
-	color: black;
+:root {
+--main-color: #eaf2f2;/*main  #eaf2f2 */
+--accent-1: #cce6ff; /*light*/
+--accent-2: #339cff; /*dark*/
+--link: #4b98b7;
+--link-hover: black;
+
+}
+
+html{
+		max-width: 100%;
+        overflow-x: hidden;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	
+	background-color: var(--main-color);
+	
+	font-family: 'Roboto', sans-serif;
+
+
 }
 
 h1 {
-	font-size: 3em;
-	background-color: #D80000;
-	color: white;
-	text-align: center;
-}
-
-h2, h3 {
-	text-decoration: underline;
-	font-weight: bold;
 	text-align: left;
+	padding: 3%;
+	font-family: 'Abril Fatface', cursive;
+	color:#404040;
 }
 
-img {
-	float: right;
-	padding: 1%;
-	margin: 1%;
+h1 a, h1 a:visited {
+	text-decoration: none;
+	color:var(--link-hover);
 }
 
-a {
-	color: #000099;
-	font-weight: bold;
+h1 a:hover {
+	color:var(--link);
 	text-decoration: none;
 }
 
-a:hover {
-	font-style: italic;
+/*all the visible content on the site*/
+#wrapper{
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	min-height: 100%;
+	max-width: 100%;
+	max-width: 100%;
 }
 
-ol, ul {
-	background-color: grey;
+
+/*header section, includes banner and menu bar*/
+header{
 }
 
-#instructions {
-	background-color: pink;
+#banner {
+	background-color: var(--main-color);
+	background-image: url("images/daisy.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height:210px;
+	margin: 0px;
+	padding: 1px;
 }
 
-#ingredients {
-	background-color: orange;
-}
 
-#footer {
+/*main contnent of a page*/
+#content{
 	background-color: white;
+	padding-left: 15%;
+	padding-right: 15%;
+
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
 }
 
-.note {
-	font-weight: bold;
-	font-style: italic;
+#content img{
+	max-width:600px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	
 }
 
-.copyright {
-	font-style: italic;
+.filmStill {
+	/*max-width: 100%;*/
+	width: 100%;
+}	
+
+/*main navigation menu at the top of every page*/
+#nav {
+	min-width: 100%;
+	background-color: var(--accent-1); /*var(--accent-1)*/
+	margin: 0px;
+	padding: 1px;
+}
+
+
+#nav ul {
+	margin: 0px;
+	padding: 1px;
+}
+
+
+#nav li {
+	padding: 10px;
+	display: inline-block;
 	text-align: center;
+	background: linear-gradient( var(--accent-1) , var(--main-color) );
+
 }
 
+#nav a{
+	text-align: center;
+	color: var(--accent-2);
+	padding: 30px;
+	margin: 1px;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	font-weight: bold;
+}
+
+
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    
+    #nav li {
+	display: flex;
+	width:100%;
+	padding: 1px;
+	
+	}
+
+	#nav a{
+		padding: 5px;
+
+	}
+
+
+	#content {
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+
+	#content img{
+	max-width:100%;
+	}
+}
+
+
+
+
+
+
+
+a {
+	color: var(--link);
+	text-decoration: none;
+	
+}
+
+a:hover {
+	color: var(--link-hover);
+	text-decoration: underline;
+}
+
+
+
+/*footer section*/
+footer {
+	text-align:center;
+	width: 100%;
+	height: 50px;
+	flex: 1;
+	padding-top: 1%;
+	font-size: small;
+}
+
+footer li{
+	display: inline-block;
+	text-align: center;
+	padding:0;
+	height:1%;
+}
+
+footer img {
+	height:50%;
+	padding-right: 1%;
+	padding-left: 1%
+}
